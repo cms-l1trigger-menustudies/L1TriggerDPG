@@ -3,7 +3,7 @@ import FWCore.ParameterSet.Config as cms
 l1NtupleProducer = cms.EDAnalyzer("L1NtupleProducer",
     verbose              = cms.untracked.bool(False),
     physVal              = cms.bool(True),
-    generatorSource      = cms.InputTag("none"),
+    generatorSource      = cms.InputTag("GenParticles"),
     simulationSource     = cms.InputTag("none"),
     hltSource            = cms.InputTag("TriggerResults::HLT"),
     gmtSource            = cms.InputTag("gtDigis"),
